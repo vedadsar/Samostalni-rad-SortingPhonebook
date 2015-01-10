@@ -59,7 +59,8 @@ public class PhonebookApp {
 		System.out.println();*/
 
 		System.out.println("Sortirani po prezimenima \n");
-		sortByLastName(phonebook);
+		//sortByLastName(phonebook);
+		sortByComparator(phonebook, new ComparatorLastName());
 		printPhonebook(phonebook);
 	}
 
@@ -94,11 +95,28 @@ public class PhonebookApp {
 		}
 	}
 
+	
+	private static void sortByComparator(Person [] array, Comparator cmp){
+		
+		for (int i = 1; i < array.length; i++) {
+
+			Person key = array[i];
+			int j = i;
+						
+			while (j > 0 && cmp.compare(key, array[j-1]) < 0) {
+						array[j] = array[j-1];
+				j--;
+			}
+			 array[j] = key;
+		}
+	}
+	
 	private static void printPhonebook(Person[] phonebook) {
 		for (Person person : phonebook) {
 			System.out.println(person);
 		}
 	}
+	
 	
 	
 }
