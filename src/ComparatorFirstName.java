@@ -1,4 +1,8 @@
-
+/**
+ * Class which compares two objects of type Person.
+ * @author Vedad_2
+ *
+ */
 public class ComparatorFirstName implements Comparator {
 
 	

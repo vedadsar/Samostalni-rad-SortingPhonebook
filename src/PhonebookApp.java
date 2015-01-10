@@ -63,7 +63,11 @@ public class PhonebookApp {
 		sortByComparator(phonebook, new ComparatorLastName());
 		printPhonebook(phonebook);
 	}
-
+	
+	/**
+	 * Method which sorts our phonebook by first name.
+	 * @param array
+	 */
 	private static void sortByFirstName(Person[] array) {
 		for (int i = 1; i < array.length; i++) {
 
@@ -79,7 +83,11 @@ public class PhonebookApp {
 		}
 		
 	}
-
+	
+	/**
+	 * Method which sorts phonebook by last name.
+	 * @param array
+	 */
 	private static void sortByLastName(Person[] array) {
 		for (int i = 1; i < array.length; i++) {
 
@@ -95,7 +103,14 @@ public class PhonebookApp {
 		}
 	}
 
-	
+	/**
+	 * Method which we use to sort our phonebook, but instead using compareTo method
+	 * from strings we use our crated compare method.
+	 * Parameter comparator is way we want to sort our phonebook, by last name or first name.
+	 * 
+	 * @param array
+	 * @param cmp
+	 */
 	private static void sortByComparator(Person [] array, Comparator cmp){
 		
 		for (int i = 1; i < array.length; i++) {

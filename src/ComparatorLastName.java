@@ -1,4 +1,8 @@
-
+/**
+ * Class which compares two object of type Person.
+ * @author Vedad_2
+ *
+ */
 public class ComparatorLastName implements Comparator{
 	/**
 	 * Method which is my compare method. To avoid using compareTo method from
