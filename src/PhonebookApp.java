@@ -20,7 +20,7 @@ public class PhonebookApp {
 				new Person("Robbi", "Maese"),
 				new Person("Kelley", "Printz"),
 				new Person("Dannie", "Ocasio"),
-				new Person("Charles", "Hodzic"),
+				new Person("Charles", "Hodžic"),
 				new Person("Rubie", "Washer"),
 				new Person("Bryant", "Masker"),
 				new Person("Julius", "Stalzer"),

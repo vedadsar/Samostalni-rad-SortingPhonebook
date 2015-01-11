@@ -37,6 +37,10 @@ public class Person {
 		
 		for(int i=0; i<firstNameToArray.length-1; i++){
 			//Checking if we found character 'Dž'.
+			if(firstNameToArray[i] == 'd' && firstNameToArray[i+1] == 'ž'){
+				firstNameToArray[i+1] = 'd';				
+				illegalCounter--;
+			}
 			if(firstNameToArray[i] == 'd' && firstNameToArray[i+1] == 'z'){
 				firstNameToArray[i+1] = 'd';				
 				illegalCounter--;
@@ -62,11 +66,14 @@ public class Person {
 		
 		for(int i=0; i<firstNameToArray.length-1; i++){
 			//Checking if we found character 'Dž'.
+			if(firstNameToArray[i] == 'd' && firstNameToArray[i+1] == 'ž'){
+				firstNameToArray[i+1] = 'd';
+				illegalCounter--;
+			}
 			if(firstNameToArray[i] == 'd' && firstNameToArray[i+1] == 'z'){
 				firstNameToArray[i+1] = 'd';
 				illegalCounter--;
 			}
-			
 		}
 		
 		value = "";
