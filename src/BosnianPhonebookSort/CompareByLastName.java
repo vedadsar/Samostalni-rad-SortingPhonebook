@@ -46,7 +46,15 @@ public class CompareByLastName implements Comparator {
 	}
 	
 
-	
+	/**
+	 * This method gets as parameter our name as char array, and turning it into
+	 * float array by ASCII values of name. In here we'll be sorting bosnian characters
+	 * as 'È' 'Dž'...
+	 * Once we find special character as 'è' we replace his float value by adding
+	 *  'c' + 0.5. That way we're sure it will be right after c.
+	 * @param array
+	 * @return
+	 */
 	private float [] charToFloat(char [] array){
 		float [] floatArray = new float[array.length];
 		
